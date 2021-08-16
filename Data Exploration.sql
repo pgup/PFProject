@@ -87,7 +87,7 @@ order by 1,2
 
 
 
--- take world, European and international out also continent is null
+-
 -- location, total death count
 
 Select location, SUM(cast(new_deaths as int)) as TotalDeath
@@ -113,6 +113,7 @@ order by 2,3
  
 	   
 --total popluation vs vacination
+--use CTE
 
 with PopvsVac (continent, location, date, population, new_vaccinations, RollingpeopleVaccinated) 
 as
